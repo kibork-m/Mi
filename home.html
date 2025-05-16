@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Автомобили</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            max-width: 100%;
+            height: 100px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на сайт об автомобилях</h1>
+    <div class="grid">
+        <div class="card">
+            <a href="BMW/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW">
+                <p>BMW</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="LEXUS/index.html">
+                <img src="LEXUS/lexus.jpg" alt="Lexus">
+                <p>Lexus</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="MERSEDES - BENZ/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes-Benz">
+                <p>Mercedes-Benz</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="TESLA/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" alt="Tesla">
+                <p>Tesla</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="TOYOTA/index.html">
+                <img src="TOYOTA/toyota.jpg" alt="Toyota">
+                <p>Toyota</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
